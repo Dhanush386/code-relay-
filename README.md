@@ -2,39 +2,39 @@
 
 A comprehensive, secure coding examination platform with role-based access for organizers and participants, supporting C, C++, and Python with sandboxed code execution.
 
-## 🚀 Features
+##  Features
 
 ### For Organizers
-- 🔐 Secure JWT-based authentication
-- 📝 Create and manage coding questions
-- 💻 Add starter code for multiple languages
-- ✅ Create visible and hidden testcases
-- 📊 View all submissions with detailed results
-- 🎯 Create and manage exams
+-  Secure JWT-based authentication
+-  Create and manage coding questions
+- Add starter code for multiple languages
+- Create visible and hidden testcases
+- View all submissions with detailed results
+-  Create and manage exams
 
 ### For Participants
-- 🎓 Exam-based authentication with participant ID
-- 📖 View questions with sample testcases
-- ⚡ Real-time code editor with syntax highlighting
-- ▶️ Run code against visible testcases
-- 📤 Submit solutions for evaluation
-- 📈 View submission results
+-  Exam-based authentication with participant ID
+-  View questions with sample testcases
+-  Real-time code editor with syntax highlighting
+-  Run code against visible testcases
+-  Submit solutions for evaluation
+-  View submission results
 
 ### Security Features
-- 🔒 Role-based access control (RBAC)
-- 🚫 Hidden testcases never exposed to participants
-- 🐳 Sandboxed code execution (Docker)
-- ⏱️ Time and memory limits enforcement
-- 🛡️ Input validation and sanitization
+-  Role-based access control (RBAC)
+-  Hidden testcases never exposed to participants
+-  Sandboxed code execution (Docker)
+-  Time and memory limits enforcement
+-  Input validation and sanitization
 
-## 📋 Prerequisites
+##  Prerequisites
 
 - Node.js (v18 or higher)
 - PostgreSQL (v14 or higher)
 - Docker (optional, for secure code execution)
 - npm or yarn
 
-## 🛠️ Installation
+##  Installation
 
 ### 1. Clone the Repository
 
@@ -94,7 +94,7 @@ docker build -f Dockerfile.executor -t coding-exam-executor .
 
 If Docker is not available, the system will fall back to local code execution (less secure).
 
-## 🎯 Usage
+##  Usage
 
 ### Organizer Workflow
 
@@ -126,7 +126,7 @@ If Docker is not available, the system will fall back to local code execution (l
 4. **Run Code**: Click "Run Code" to test against visible testcases
 5. **Submit**: Click "Submit" to submit for final evaluation (runs against all testcases)
 
-## 🔑 Environment Variables
+##  Environment Variables
 
 ### Backend (.env)
 
@@ -143,7 +143,7 @@ PORT=5000
 NEXT_PUBLIC_API_URL=http://localhost:5000
 ```
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 CV/
@@ -170,7 +170,7 @@ CV/
     └── package.json
 ```
 
-## 🎨 Technology Stack
+##  Technology Stack
 
 ### Backend
 - **Framework**: Node.js + Express
@@ -185,7 +185,7 @@ CV/
 - **Code Editor**: Monaco Editor
 - **HTTP Client**: Axios
 
-## 🐳 Docker Image Details
+##  Docker Image Details
 
 The `coding-exam-executor` Docker image includes:
 - Ubuntu 22.04 base
@@ -193,7 +193,7 @@ The `coding-exam-executor` Docker image includes:
 - G++ (for C++)
 - Python 3
 
-## 🔒 Security Considerations
+##  Security Considerations
 
 1. **Hidden Testcases**: Never sent to frontend; only used server-side during submission
 2. **Code Execution**: Runs in isolated Docker containers with resource limits
@@ -201,7 +201,7 @@ The `coding-exam-executor` Docker image includes:
 4. **Input Validation**: All user inputs validated on backend
 5. **SQL Injection Prevention**: Prisma ORM prevents SQL injection
 
-## 📊 Database Schema
+##  Database Schema
 
 - **Organizer**: Stores organizer accounts
 - **Exam**: Stores exam information with unique codes
@@ -211,7 +211,7 @@ The `coding-exam-executor` Docker image includes:
 - **Testcase**: Test inputs/outputs with visibility flag
 - **Submission**: Code submissions with scores
 
-## 🛡️ API Endpoints
+##  API Endpoints
 
 ### Organizer Routes
 - `POST /api/organizer/register` - Register organizer
@@ -232,7 +232,7 @@ The `coding-exam-executor` Docker image includes:
 - `POST /api/participant/submit` - Submit code (all testcases)
 - `GET /api/participant/submissions` - View own submissions
 
-## 🚨 Troubleshooting
+##  Troubleshooting
 
 ### Database Connection Issues
 - Ensure PostgreSQL is running
@@ -247,14 +247,14 @@ The `coding-exam-executor` Docker image includes:
 - Backend: Change `PORT` in `.env`
 - Frontend: Next.js uses port 3000 by default
 
-## 📝 License
+##  License
 
 This project is for educational purposes.
 
-## 👥 Support
+##  Support
 
 For issues or questions, please refer to the implementation plan or contact the development team.
 
 ---
 
-**Built with ❤ using Next.js, Express, and Prisma**
+**Built with  using Next.js, Express, and Prisma**
